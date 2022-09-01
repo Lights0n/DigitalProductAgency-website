@@ -49,6 +49,7 @@ body {
    //overflow-x: hidden;
    font-weight: 400;
    box-sizing: border-box;
+   scroll-behavior: smooth;
    //
 }
 /*end of starting*/
@@ -131,6 +132,27 @@ main {
    }
 
    &__item {
+      list-style: none;
+      color: #000;
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      &::after {
+         content: "";
+         position: absolute;
+         width: 100%;
+         transform: scaleX(0);
+         height: 2px;
+         bottom: 0;
+         left: 0;
+         background-color: #2639ed;
+         transform-origin: bottom right;
+         transition: transform 0.25s ease;
+      }
+      &:hover::after {
+         transform: scaleX(1);
+         transform-origin: bottom left;
+      }
    }
 
    &_container {
@@ -168,9 +190,13 @@ main {
    &__text {
       padding: 0px 0px 33px 0px;
       @media (max-width: 1023px) {
-         background-color: rgba(255, 255, 255, 0.5);
+         background-color: rgba(255, 255, 255, 0.8);
          color: #000;
-         border-radius: 10px;
+         border-radius: 0px 0px 30px 0px;
+
+         // min-width: 100%;
+         padding: 10px;
+         backdrop-filter: blur(3px);
       }
    }
 
@@ -781,7 +807,7 @@ main {
       display: flex;
       flex: 0 1 auto;
       background: #2639ed;
-      border-radius: 75px;
+      border-radius: 75px 45% 75px 45%;
       padding: 100px 0px;
       justify-content: center;
       @media (max-width: 767px) {
@@ -802,7 +828,6 @@ main {
       }
    }
    &__input {
-      margin: 0px 0px 0px -34px;
       flex: 1 1 auto;
       position: relative;
       min-width: 480px;

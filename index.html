@@ -6,9 +6,19 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://fonts.googleapis.com/css?family=Rubik:regular&display=swap&subset=cyrillic-ext"
       rel="stylesheet" />
+
+   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+   <link rel="manifest" href="img/favicon/site.webmanifest">
+   <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="theme-color" content="#ffffff">
+
+
    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-   <title>HEY! NICE TO C YA!</title>
+   <title>A+ Studio</title>
    <!--[if IE]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -24,7 +34,7 @@
    rel="stylesheet" />
 
 <body>
-   <div class="wrapper">
+   <div class="wrapper" id="home">
       <header class="header">
          <div class="header__container _container">
             <div class="header__logo">
@@ -32,12 +42,26 @@
             </div>
             <div class="header__menu">
                <ul class="header__list">
-                  <li class="header__item">Home</li>
-                  <li class="header__item">What We Do</li>
-                  <li class="header__item">Service</li>
-                  <li class="header__item">Project</li>
-                  <li class="header__item">Blog</li>
-                  <li class="header__item">Contact</li>
+                  <a href="#home">
+                     <li class="header__item">Home</li>
+                  </a>
+                  <a href="#what-we-do">
+                     <li class="header__item">What We Do</li>
+                  </a>
+                  <a href="#service">
+                     <li class="header__item">Service</li>
+                  </a>
+                  <a href="#project">
+                     <li class="header__item">Project</li>
+                  </a>
+                  <a href="#blog">
+                     <li class="header__item">Blog</li>
+                  </a>
+                  <a href="#contact">
+                     <li class="header__item">Contact</li>
+                  </a>
+
+
                </ul>
             </div>
          </div>
@@ -83,7 +107,7 @@
             </div>
          </section>
          <!-- START OF ===OURHELP=== -->
-         <section class="ourhelp">
+         <section class="ourhelp" id="what-we-do">
             <div class="ourhelp__container _container">
                <div class="ourhelp__body">
                   <div class="ourhelp__message">
@@ -139,7 +163,7 @@
          </section>
          <!-- END OF HELP -->
          <!-- start of ===PRESENTATION=== -->
-         <section class="presentanion">
+         <section class="presentanion" id="service">
             <div class="presentanion__container _container">
                <div class="presentanion__body">
                   <div class="presentanion__video"><iframe width="560" height="315"
@@ -158,7 +182,8 @@
          </section>
          <!-- end of PRESENTATION -->
          <!-- start of TESTIMONIALS -->
-         <section class="testimonials">
+         <section class="testimonials" id="project">
+
             <div class="testimonials__container _container">
                <div class="testimonials__contet">
                   <div class="testimonials__title title">What our happy client say</div>
@@ -193,7 +218,7 @@
          </section>
          <!-- END OF TESTMONAILS -->
          <!-- START OF SUBSCRIBITION -->
-         <section class="subscribition">
+         <section class="subscribition" id="blog">
             <div class="subscribition__container _container">
                <div class="subscribition__body1">
                   <div class="subscribition__content">
@@ -212,7 +237,7 @@
          </section>
       </main>
       <!-- START OF FOOTER -->
-      <footer class="footer">
+      <footer class="footer" id="contact">
          <div class="footer__container _container">
             <div class="footer__body">
                <div class="footer__content">
